@@ -1,11 +1,11 @@
 ﻿
-namespace AppEscolaRM.DomainTests.Alunos
+namespace AppEscolaRM.Domain.Tests.Alunos
 {
-    using Domain.Alunos;
+    using AppEscolaRM.Domain.Alunos;
     using Xunit;
+
     public class AlunoTest
     {
-
         [Fact]
         public void AlunoDeveSerValido()
         {
@@ -17,6 +17,5 @@ namespace AppEscolaRM.DomainTests.Alunos
             Assert.Equal("Daniele", aluno.Nome);
             Assert.Equal("52110655658", aluno.Cpf);
         }
-
     }
 }

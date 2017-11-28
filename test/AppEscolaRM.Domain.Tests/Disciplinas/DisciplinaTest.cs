@@ -1,5 +1,5 @@
 ﻿
-namespace AppEscolaRM.DomainTests.Disciplinas
+namespace AppEscolaRM.Domain.Tests.Disciplinas
 {
     using Domain.Disciplinas;
     using Xunit;

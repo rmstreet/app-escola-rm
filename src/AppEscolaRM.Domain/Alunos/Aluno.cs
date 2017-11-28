@@ -1,9 +1,8 @@
 ﻿
 namespace AppEscolaRM.Domain.Alunos
 {
-    using Core.Models;
+    using Domain.Core.Models;
     using FluentValidation;
-    using System;
 
     public class Aluno : Entity<Aluno>
     {

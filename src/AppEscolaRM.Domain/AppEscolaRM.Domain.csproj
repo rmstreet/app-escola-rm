@@ -39,7 +39,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alunos\Aluno.cs" />
+    <Compile Include="Alunos\Repository\IAlunoRepository.cs" />
+    <Compile Include="CommandHandlers\CommandHandler.cs" />
     <Compile Include="Disciplinas\Disciplina.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -51,5 +55,6 @@
       <Name>AppEscolaRM.Domain.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

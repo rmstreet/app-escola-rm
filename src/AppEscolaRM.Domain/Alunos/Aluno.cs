@@ -3,10 +3,11 @@ namespace AppEscolaRM.Domain.Alunos
 {
     using Domain.Core.Models;
     using FluentValidation;
+    using System;
 
     public class Aluno : Entity<Aluno>
     {
-        
+        private Aluno() { }
         public Aluno(string nome, string cpf)
         {
             Nome = nome;
@@ -47,5 +48,11 @@ namespace AppEscolaRM.Domain.Alunos
 
         #endregion
 
+        #region Factory
+        public static class AlunoFactory
+        {
+            public static Aluno NovoAlunoCompleto(Guid id, string nome, string cpf) => new Aluno() { Id = id, Nome = nome, Cpf = cpf };            
+        }
+        #endregion
     }
 }

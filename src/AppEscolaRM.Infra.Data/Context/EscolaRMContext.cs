@@ -1,5 +1,6 @@
 ﻿using AppEscolaRM.Domain.Alunos;
 using AppEscolaRM.Domain.Disciplinas;
+using AppEscolaRM.Infra.Data.Mappings;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -36,6 +37,19 @@ namespace AppEscolaRM.Infra.Data.Context
 
             modelBuilder.Properties<string>()
                 .Configure(p => p.HasMaxLength(100));
+
+            modelBuilder.Entity<Aluno>()
+                .HasMany(a => a.DisciplinasCursadas)
+                .WithMany(d => d.AlunosMatriculados)
+                .Map(ad => 
+                        {
+                            ad.MapLeftKey("AlunoId");
+                            ad.MapRightKey("DisciplinaId");
+                            ad.ToTable("Matriculas");
+                        });
+
+            modelBuilder.Configurations.Add(new AlunoMap());
+            modelBuilder.Configurations.Add(new DisciplinaMap());
 
             base.OnModelCreating(modelBuilder);
         }

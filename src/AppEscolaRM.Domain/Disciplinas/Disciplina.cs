@@ -1,9 +1,11 @@
 ﻿
 namespace AppEscolaRM.Domain.Disciplinas
 {
+    using AppEscolaRM.Domain.Alunos;
     using Core.Models;
     using FluentValidation;
     using System;
+    using System.Collections.Generic;
 
     public class Disciplina : Entity<Disciplina>
     {               
@@ -20,6 +22,7 @@ namespace AppEscolaRM.Domain.Disciplinas
         public string Semestre { get; private set; }
         public int Ano { get; private set; }
 
+        public virtual ICollection<Aluno> AlunosMatriculados { get; set; }
 
         public string SemestreAno => (!string.IsNullOrEmpty(Semestre) && Ano != 0) ? string.Format("{0}/{1}", Semestre, Ano) : "";
 

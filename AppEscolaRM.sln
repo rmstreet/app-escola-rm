@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppEscolaRM.Domain", "src\AppEscolaRM.Domain\AppEscolaRM.Domain.csproj", "{32E675CB-9BDF-448E-B4ED-7FF0BD3A01AB}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppEscolaRM.Domain.Tests", "test\AppEscolaRM.Domain.Tests\AppEscolaRM.Domain.Tests.csproj", "{71C4124F-8700-47E9-BEC9-6332E99ABADF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppEscolaRM.Infra.Data", "src\AppEscolaRM.Infra.Data\AppEscolaRM.Infra.Data.csproj", "{1E8AC2C3-245C-461A-95BA-13BD7C79E6C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppEscolaRM.Infra.Data.WebService", "src\AppEscolaRM.Infra.Data.WebService\AppEscolaRM.Infra.Data.WebService.csproj", "{BE9C7CA2-A0A8-4903-9D18-BD31781A4DE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{1E8AC2C3-245C-461A-95BA-13BD7C79E6C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E8AC2C3-245C-461A-95BA-13BD7C79E6C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E8AC2C3-245C-461A-95BA-13BD7C79E6C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE9C7CA2-A0A8-4903-9D18-BD31781A4DE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE9C7CA2-A0A8-4903-9D18-BD31781A4DE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE9C7CA2-A0A8-4903-9D18-BD31781A4DE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE9C7CA2-A0A8-4903-9D18-BD31781A4DE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,9 +1,11 @@
 ﻿
 namespace AppEscolaRM.Domain.Alunos
 {
+    using AppEscolaRM.Domain.Disciplinas;
     using Domain.Core.Models;
     using FluentValidation;
     using System;
+    using System.Collections.Generic;
 
     public class Aluno : Entity<Aluno>
     {
@@ -17,7 +19,7 @@ namespace AppEscolaRM.Domain.Alunos
         public string Nome { get; set; }
         public string Cpf { get; set; }
 
-
+        public virtual ICollection<Disciplina> DisciplinasCursadas { get; set; }
 
         public override bool EhValido()
         {
